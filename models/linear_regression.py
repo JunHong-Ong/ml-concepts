@@ -42,6 +42,12 @@ class LinearRegression(BaseModel):
         return costs
 
     def loss(self, x, y):
+        """Compute the mean squared error for the model.
+
+        Args:
+            x: The training example inputs (m, n).
+            y: The training example labels (m, ).
+        """
         m, n = x.shape
 
         y_pred = self.predict(x)
