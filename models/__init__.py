@@ -1,1 +1,3 @@
 from .linear_regression import LinearRegression
+from .locally_weighted_linear_regression import LocallyWeightedLinearRegression
+from .logistic_regression import LogisticRegression
